@@ -1,0 +1,29 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/evanmoss/backend-practical/src/logs/error/.b79beec2781ea3373b28f453d63c2381a5b5093d-audit.json",
+    "files": [
+        {
+            "date": 1612207538090,
+            "name": "/Users/evanmoss/backend-practical/src/logs/error/2021-02-01.error.log",
+            "hash": "1b6aed6adc5f33aff3b345700daa76a1"
+        },
+        {
+            "date": 1612578864156,
+            "name": "/Users/evanmoss/backend-practical/src/logs/error/2021-02-05.error.log",
+            "hash": "fb018b0587e0529506c034caa25e6f07"
+        },
+        {
+            "date": 1612987565693,
+            "name": "/Users/evanmoss/backend-practical/src/logs/error/2021-02-10.error.log",
+            "hash": "aac7446a052aa98a4e17ca232d412ede"
+        },
+        {
+            "date": 1613083241754,
+            "name": "/Users/evanmoss/backend-practical/src/logs/error/2021-02-11.error.log",
+            "hash": "85adde8c19deac77eecfbc157aac3c40"
+        }
+    ]
+}

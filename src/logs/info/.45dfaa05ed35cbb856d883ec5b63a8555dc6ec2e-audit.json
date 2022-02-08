@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/home/david/git/backend-practical/src/logs/info/.45dfaa05ed35cbb856d883ec5b63a8555dc6ec2e-audit.json",
+    "files": [
+        {
+            "date": 1613089711493,
+            "name": "/home/david/git/backend-practical/src/logs/info/2021-02-11.log",
+            "hash": "73fbb8cfce716be3e18c0409d6cfb285"
+        }
+    ]
+}

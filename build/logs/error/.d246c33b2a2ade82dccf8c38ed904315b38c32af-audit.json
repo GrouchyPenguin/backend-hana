@@ -1,0 +1,19 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/evanmoss/backend-practical/build/logs/error/.d246c33b2a2ade82dccf8c38ed904315b38c32af-audit.json",
+    "files": [
+        {
+            "date": 1612207491085,
+            "name": "/Users/evanmoss/backend-practical/build/logs/error/2021-02-01.error.log",
+            "hash": "3e93c54d778c8c29d7beabbfd7d7b110"
+        },
+        {
+            "date": 1613084257442,
+            "name": "/Users/evanmoss/backend-practical/build/logs/error/2021-02-11.error.log",
+            "hash": "e1c5782457322119d8ac92f3addc7bba"
+        }
+    ]
+}

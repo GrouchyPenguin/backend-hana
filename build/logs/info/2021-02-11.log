@@ -1,0 +1,5 @@
+2021-02-11 16:28:47 info: 🚀 App listening on the port 3000
+2021-02-11 16:28:50 info: ::ffff:127.0.0.1 - - [12/Feb/2021:00:28:50 +0000] "GET /videos/populated HTTP/1.1" 200 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0"
+2021-02-11 16:29:02 info: ::ffff:127.0.0.1 - - [12/Feb/2021:00:29:02 +0000] "GET /videos/integration/import HTTP/1.1" 200 783 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0"
+2021-02-11 16:29:08 error: StatusCode : 404, Message : Error: User not found
+2021-02-11 16:29:08 info: ::ffff:127.0.0.1 - - [12/Feb/2021:00:29:08 +0000] "GET /videos/populated HTTP/1.1" 404 35 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0"

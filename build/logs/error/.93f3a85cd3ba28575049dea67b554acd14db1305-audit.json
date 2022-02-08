@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/home/david/backend_hiring/backend-practical/build/logs/error/.93f3a85cd3ba28575049dea67b554acd14db1305-audit.json",
+    "files": [
+        {
+            "date": 1643413085330,
+            "name": "/home/david/backend_hiring/backend-practical/build/logs/error/2022-01-28.error.log",
+            "hash": "8cfb4a5a67c05ae5e95aeecafae3879a"
+        }
+    ]
+}
