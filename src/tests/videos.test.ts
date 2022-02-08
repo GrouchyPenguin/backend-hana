@@ -5,6 +5,7 @@ import videoModel from '../models/videos.model';
 import UserRoute from '../routes/users.route';
 import VideoRoute from '../routes/videos.route';
 import { CreateVideoDto } from '../dtos/videos.dto';
+import { importFromYoutube } from '../services/external';
 
 afterAll(async () => {
   await new Promise<void>(resolve => setTimeout(() => resolve(), 500));
@@ -57,5 +58,23 @@ describe('Testing Videos', () => {
     it('response statusCode 200 / imported', async () => {
       return request(app.getServer()).get(`${videosRoute.path}/integration/import`).send().expect(200);
     });
+  });
+
+  describe('[GET] /videos/populated', () => {
+    const existingVideo: Video[] = videoModel;
+    const videosRoute = new VideoRoute();
+    const app = new App([videosRoute]);
+
+    it('response statusCode 200', async () => {
+      const newVideo: Video[] = (await importFromYoutube()).videoData;
+      const userService = new UserService();
+      const processedVideo: Video[] = newVideo.map(video => {
+        return {...video, user: createUser({ email: email }) }
+      });
+      request(app.getServer()).get(`${videosRoute.path}/populated`).send().expect(200, {
+        data: existingVideo.concat(newVideo)
+      });
+    });
+
   });
 });

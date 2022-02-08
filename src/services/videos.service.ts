@@ -1,4 +1,5 @@
 import { CreateVideoDto } from '../dtos/videos.dto';
+import { CreateUserDto } from '../dtos/users.dto';
 import HttpException from '../exceptions/HttpException';
 import { Video, PopulatedVideo } from '../interfaces/videos.interface';
 import { User } from '../interfaces/users.interface';
@@ -53,6 +54,9 @@ class VideoService {
   public async ingestYoutubeVideos(videosData: CreateVideoDto[]): Promise<Video[]> {
     const out: any[] = [];
     for (let videoData of videosData) {
+      const email = videoData.user;
+      const userData: CreateUserDto = { email: email };
+      this.userService.users.push(await this.userService.createUser(userData));
       out.push(await this.createVideo(videoData));
     }
     return out;
